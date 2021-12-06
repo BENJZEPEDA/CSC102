@@ -1,0 +1,17 @@
+
+function checkCreds() {
+    var eventName = document.getElementById("firstName").value;
+    var theme = document.getElementById("lastName").value;
+    var peopleCount = Document.getElementById("badgeNumber").value;
+    var eventInfo = eventName + theme + peopleCount;
+        if (eventInfo.length > 24 || eventInfo.length < 9 ) {
+            document.getElementById("loginStatus").innerHTML = "Number of participants is an invalid number!";
+    }
+        else if (peopleCount > 999 || peopleCount < 100 ) {
+            document.getElementById("loginStatus").innerHTML = "Number of participants is an invalid number!";
+    }
+        else {
+            alert("ACCESS GRANTED, Welcome" + eventInfo + "!!!");
+            location.replace("UAT_SPACE_BLASTOFF_AND_FUNCTION_V2.html");
+    }
+}
