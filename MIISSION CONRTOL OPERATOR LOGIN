@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- THIS IS BENJAMIN ZEPEDA'S NEW UAT SPACE - TAGS, BENZEPED@UAT.EDU-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="WEEK3_LOGIN.js"></script>
+    <link href="FONTS_AND_STYLES.css" rel="stylesheet" type="text/css"/>
+
+    <title>LOGIN - UAT SPACE PROGRAM</title>
+</head>
+
+<body>
+    <CENTER><IMG SRC="UATspacelogo-2.jpg" />
+    <BR>
+        <script>alert("WARNING, CLASSIFIED CONTENT, please click -OK- to continue to UAT SPACE PROGRAM.")</script>
+    <H1>UAT SPACE PROGRAM</H1>
+    <BR>
+    <p id="loginStatus" class="loginID">Status of login...</p>
+    <BR>
+    <form id="credSubmit" onsubmit="return false">
+        FIRST NAME:           <input type="text" id="firstName" /> <BR>
+        LAST NAME:            <input type="text" id="lastName" /> <BR>
+        3-DIGIT BADGE NUMBER: <input type="number" id="badgeNumber" /> <BR>
+        <input type="submit" onclick="checkCreds();" />   
+        </form>
+    </CENTER>
+</body> 
+</html>
