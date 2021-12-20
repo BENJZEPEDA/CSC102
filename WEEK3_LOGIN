@@ -1,17 +1,18 @@
 
 function checkCreds() {
-    var eventName = document.getElementById("firstName").value;
-    var theme = document.getElementById("lastName").value;
-    var peopleCount = Document.getElementById("badgeNumber").value;
-    var eventInfo = eventName + theme + peopleCount;
-        if (eventInfo.length > 24 || eventInfo.length < 9 ) {
-            document.getElementById("loginStatus").innerHTML = "Number of participants is an invalid number!";
+    var firstName = document.getElementById("firstName").value;
+    var lastName = document.getElementById("lastName").value;
+    var badgeNumber = document.getElementById("badgeNumber").value;
+    var fullName = firstName + " " + lastName;
+
+        if (fullName.length > 24 || fullName.length < 2 ) {
+            document.getElementById("loginStatus").innerHTML = "FULL NAME HAS INVALID NUMBER OF CHARACTORS!";
     }
-        else if (peopleCount > 999 || peopleCount < 100 ) {
-            document.getElementById("loginStatus").innerHTML = "Number of participants is an invalid number!";
+        else if (badgeNumber > 999 || badgeNumber < 0 ) {
+            document.getElementById("loginStatus").innerHTML = "BADGE ID IS AN INVALID NUMBER!!";
     }
         else {
-            alert("ACCESS GRANTED, Welcome" + eventInfo + "!!!");
+            alert("ACCESS GRANTED, Welcome " + fullName + "!!!");
             location.replace("UAT_SPACE_BLASTOFF_AND_FUNCTION_V2.html");
     }
 }
