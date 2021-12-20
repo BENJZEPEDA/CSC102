@@ -1,23 +1,17 @@
 <!DOCTYPE html>
-<!-- THIS IS BENJAMIN ZEPEDA'S NEW UAT SPACE - TAGS, BENZEPED@UAT.EDU-->
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="WEEK3_LOGIN.js"></script>
-    <link href="FONTS_AND_STYLES.css" rel="stylesheet" type="text/css"/>
-
+    <script src="JS_LOGIN.js"></script>
+    <link href="FONTS_AND_STYLES.css" rel="stylesheet" type="text/css" />
     <title>LOGIN - UAT SPACE PROGRAM</title>
 </head>
 
 <body>
     <CENTER><IMG SRC="UATspacelogo-2.jpg" />
     <BR>
-        <script>alert("WARNING, CLASSIFIED CONTENT, please click -OK- to continue to UAT SPACE PROGRAM.")</script>
     <H1>UAT SPACE PROGRAM</H1>
     <BR>
-    <p id="loginStatus" class="loginID">Status of login...</p>
+    <p id="loginStatus" class="texty">Status of login...</p>
     <BR>
     <form id="credSubmit" onsubmit="return false">
         FIRST NAME:           <input type="text" id="firstName" /> <BR>
